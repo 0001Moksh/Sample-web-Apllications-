@@ -1,0 +1,37 @@
+1. Numeric Types:
+ 
+ -*int*: Integer values (e.g., `1`, `42`)
+
+ -*float*: Float numbers (e.g., `3.14`, `2.718`)
+ 
+ -*complex*: Complex numbers (e.g., `1 + 2j`)
+
+
+2. Sequence Types:
+
+ -*str*: String (e.g., `"hello"`, `"Python"`)
+
+ -*list*: mutable collection
+      (e.g., `[1, 2, 3]`, `["apple", "banana"]`)
+
+ -*tuple*: immutable collection
+      (e.g., `(1, 2, 3)`, `("apple", "banana")`)
+
+ -*range*: Sequence of numbers (e.g., `range(5)`)
+
+
+3. Mapping Type:
+ -*dict*: Dictionary, key-value pairs 
+     (e.g., `{"name": "Alice", "age": 25}`)
+
+
+4. Set Types:
+ -*set*: (e.g., `{1, 2, 3}`, `{"apple", "banana"}`)
+
+
+5. Boolean Type:
+ -*bool*: Boolean value (`True` or `False`)
+
+
+6. None Type:
+ -*None*: None value ('None')

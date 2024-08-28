@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="img3.png" type="image/icon type">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&family=IBM+Plex+Sans+Arabic&family=Outfit&family=Poppins:wght@400;800&family=Source+Code+Pro:wght@300&display=swap"
+    rel="stylesheet">
+  <title>Moksh bhardwaj-Developer</title>
+</head>
+aki
+<body>
+  <header>
+    <nav>
+      <input type="checkbox" id="nav-toggle">
+      <div class="logo"> <h1><strong>ᛖ𝙤ĸ𝓼h's_Portfolio</strong></h1> </div>
+      <ul class="links">
+        <li onclick="closeform()"><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#" onclick="popup()" style="cursor: pointer;">Services</a></li>
+        <li onclick="aki()"><a href="#clients">Contact Me</a></li>
+      </ul>
+      <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+    </nav>
+  </header>
+
+   <!-- Contact form  -->
+  <div class="container" id="form">
+    <h4 style="cursor: pointer; text-align: center;" onclick="closeform()">Close</h4>
+    <form name="contact" action="POST" data-netlify="true" onsubmit="submit">
+      <div class="form-group">
+        <label for="firstName"></label>
+        <input type="text" id="firstName" placeholder="First Name.." name="firstName">
+      </div>
+      <div class="form-group">
+        <label for="lastName"></label>
+        <input type="text" id="lastName" placeholder="Last Name.." name="lastName">
+      </div>
+      <div class="form-group">
+        <label for="email"></label>
+        <input type="email" placeholder="Email-ID" id="email" name="email">
+      </div><br>
+      <div class="form-group">
+        <select style="border-color:rgb(255, 0, 0);border-radius: 7px; font-style: italic; font-size: 20px;">
+            <option class="text-grey" value disable="disable">Comfirm Your Pack</option> 
+            <option value="weigth Loss">💎Diamond</option>
+            <option value="weigth gain">🪙Gold</option> 
+            <option value="endurance">💿Silver</option>
+            <option value="health">🟤Bronze</option>
+        </select>
+    </div>
+      <div class="form-group">
+        <label for="message"></label>
+        <textarea name="message" placeholder="Type your requirement....." id="message" cols="30" rows="3"></textarea>
+      </div>
+      <center>
+        <div data-netlify-recaptcha="true"></div>
+      </center>
+      <button type="submit">SUBMIT</button>
+      
+
+    </form>
+  </div>
+
+  <!-- package -->
+  <div class="pack1" id="pack1">
+    <h2><span class="text-white"><b>You select 💎Diamond Pack :<br><i>Cost 165$ (dollar)</i> <br> In this you will get your websities in 10 days <br> as per your requirement<br> Contact me and Write your demanding web </b></span>
+    </h2>
+    <div class="buttons">
+      <a class="text-white" onclick="closepack1()" href="#clients"><button id="close" onclick="aki()">Contact Me</button></a>
+      <a href="#Pack"><button id="close" onclick="closepack1()">Select another one</button></a>
+    </div>
+  </div>
+  <div class="pack2" id="pack2">
+    <h2><span class="text-white"><b>You select 🪙Gold Pack :<br><i>Cost 124$ (dollar)</i> <br> In this you will get your websities in 15 days <br> as per your requirement<br> Contact me and Write your demanding web </b></span>
+    </h2>
+    <div class="buttons">
+      <a class="text-white" onclick="closepack2()" href="#clients"><button id="close" onclick="aki()">Contact Me</button></a>
+      <a href="#Pack"><button id="close" onclick="closepack2()">Select another one</button></a>
+    </div>
+  </div> 
+  <div class="pack3" id="pack3">
+    <h2><span class="text-white"><b>You select 💿Silver Pack :<br><i>Cost 82$ (dollar)</i> <br> In this you will get your websities in 20 days <br> as per your requirement<br> Contact me and Write your demanding web </b></span>
+    </h2>
+    <div class="buttons">
+      <a class="text-white" onclick="closepack3()" href="#clients"><button id="close" onclick="aki()">Contact Me</button></a>
+      <a href="#Pack"><button id="close" onclick="closepack3()">Select another one</button></a>
+    </div>
+  </div>
+   <div class="pack4" id="pack4">
+    <h2><span class="text-white"><b>You select 🟤Bronze Pack :<br><i>Cost 41$ (dollar)</i> <br> In this you will get your websities in 30 days <br> as per your requirement<br> Contact me and Write your demanding web </b></span>
+    </h2>
+    <div class="buttons">
+      <a class="text-white" onclick="closepack4()" href="#clients"><button id="close" onclick="aki()">Contact Me</button></a>
+      <a href="#Pack"><button id="close" onclick="closepack4()">Select another one</button></a>
+    </div>
+  </div>
+
+<!-- service -->
+  <div class="popup" id="popup">
+    <h2><span class="text-white"><b>Starting web business needs some of the essential products and services, and some of these products to include in your web habit improve web skills.
+
+      These services vary from my side to your mind depending on the location, space, funds, and other factors.
+      
+      For a successful business, you need to include the following products and services in your company.</b></span>
+    </h2>
+    <div class="buttons">
+      <button id="close" onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+
+
+  <main>
+    <section class="first" id="home">
+      <div class="leftSection">
+        <h2>Hi,</h2>
+        <div>
+          My name is <span class="purple">ᛖ𝙤ĸ𝓼h </span>and I am a Passionate
+          <br><span id="element"></span>
+        </div>
+      </div>
+
+      <div class="rightSection">
+        <img src="1img4.png" alt="" srcset="">
+      </div>
+    </section><hr>
+    <div class="buttons">
+      <button onclick="aki()">Contact Me</button>
+      <a href=""><button>Git - Hub</button></a>
+      <a href="resume.pdf"><button>Download My Resume to </button></a>
+    </div>
+
+    <div style="background-image: url('bluetree.png'); height: auto; width: auto;">
+    <hr>
+<br>
+ <section class="second" id="Pack">
+<div><h4 style="text-align:center; font-style: oblique; font-size: 40px;"><u>Package Section</u></h4></div>
+<div class="pack0">
+  <ul>
+    <ul><li><a href="#" onclick="pack1()" style="cursor: pointer;">💎Diamond Pack </a></li></ul>
+    <ul><li><a href="#"onclick="pack2()" style="cursor: pointer;">🪙Gold Pack </a></li></ul>
+    <ul><li><a href="#"onclick="pack3()" style="cursor: pointer;">💿Silver Pack </a></li></ul>
+    <ul><li><a href="#"onclick="pack4()" style="cursor: pointer;">🟤Bronze Pack </a></li></ul>
+  </div></div></section>
+  <hr>
+    <section class="second" id="about">
+      <span class="text-grey">What I have done so far</span>
+      <h1>Work Experience</h1>
+      <div class="box">
+        <div class="vertical">
+          <img src="html.jpg" class="image-top" alt="">
+          <div class="vertical-title">
+            HTML Developer (2018-2023)
+          </div>
+          <div class="vertical-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, accusamus ratione! Ipsa explicabo
+            inventore aperiam, iusto error at non corporis architecto accusantium officia est?
+          </div>
+        </div>
+        <div class="vertical">
+          <img src="androidstudio.jpg" class="image-top" alt="">
+          <div class="vertical-title">
+            Android Developer (2018-2023)
+          </div>
+          <div class="vertical-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, accusamus ratione! Ipsa explicabo
+            inventore aperiam, iusto error at non corporis architecto accusantium officia est?
+          </div>
+        </div>
+        <div class="vertical">
+          <img src="nodejs.jpg" class="image-top" alt="">
+          <div class="vertical-title">
+            Node js Developer (2018-2023)
+         </div>
+         <div class="vertical-desc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, accusamus ratione! Ipsa explicabo
+          inventore aperiam, iusto error at non corporis architecto accusantium officia est?
+         </div>
+        </div>
+        <div class="vertical">
+          <img src="js.jpg" class="image-top" alt="">
+          <div class="vertical-title">
+            Java Developer (2018-2023)
+          </div>
+          <div class="vertical-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, accusamus ratione! Ipsa explicabo
+            inventore aperiam, iusto error at non corporis architecto accusantium officia est?
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main> 
+    <br> 
+
+<div class="iconzone">
+  <div>
+     <img src="share.png" class="icons"></div>
+  <div>
+    <a href="https://www.instagram.com/moksh_bhardwaj23/" style="cursor: pointer;"><img src="instragram.jpeg" class="iconi"></a></div>
+    <div>
+      <a href="https://www.instagram.com/moksh_bhardwaj23/" style="cursor: pointer;"><img src="whatsapp.jpg" class="iconi"></a></div>
+      <div>
+        <a href="https://www.instagram.com/moksh_bhardwaj23/" style="cursor: pointer;"><img src="facebook.jpeg" class="iconi"></a></div>
+  </div>
+
+ <footer><hr>
+    <div class="footer-rights">
+      www.mokshbhardwaj.in || © All Rights Reserved
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Designer','Website Devloper', 'Video Editor',
+       'Programmer','╾╾╾╾╾╾╾╾╾╾╾╾╾ Do you want an Websitie which is pocket Frindly',
+       '╾╾╾╾╾╾╾╾╾╾╾╾╾ Then Congratulation. You Visit on the Best Site...',
+       "╾╾╾╾╾╾╾╾╾╾╾╾╾ Moksh's Portofolio",
+       '╾╾╾╾╾╾╾╾╾╾╾╾╾ You Can Purchase One Pack, from the Following Section_'],
+      typeSpeed: 50,
+    });
+  </script>
+ <script>
+  var typed = new Typed('#element', {
+    strings: [''],
+    typeSpeed: 150,
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+</head>
+
+<body>
+    <div class="flex justify-center  bg-no-repeat  bg-cover h-full md:bg-center"
+        style="background-image:url('https://wallpapercave.com/dwp2x/wp9651527.jpg')">
+        <div class="flex flex-col items-center ">
+            <nav class="self-center w-full max-w-20xl ">
+                <div
+                    class="flex md:flex-row flex-col justify-between items-center md:items-start border-b-2 border-blue-900">
+                    <h1 class=" py-4 text-2xl font-sans font-bold px-10">
+                        <p style="color:rgb(255, 255, 255);">POWER FITNESS GYM </p>
+                    </h1>
+                </div>
+            </nav>
+            <div class="flex flex-col justify-center items-center text-center  max-w-7xl   my-8 py-4 px-10">
+                <h1 class="text-base font-medium tracking-wider ">
+                    <p style="color:rgb(0, 0, 0)">WELCOME TO CONTACT SECTION</p>
+                </h1>
+                <span class="underline underline-onset-2 text-gray-700-mt-3"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; </span>
+
+
+
+                <div class="container register">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel"
+                                aria-labelledby="home-tab">
+                                <div class="row register-form">
+                                    <div class="col-md-12">
+                                        <form autocomplete="off">
+                                            <br>
+
+
+                                            <div class="form-group ">
+                                                <input type="text" name="Name" id="name" size="20px"
+                                                    class="form-control bg-gradient-to-l from-cyan-200 to-brown-400 px-6 py-1  border-2 rounded-2xl px-1"
+                                                    placeholder="Your Name *" value="" required="" />
+                                            </div><br>
+
+                                            <div class="form-group  ">
+                                                <input type="number" name="Phone" id="phone" size="120px"
+                                                    class="form-control bg-gradient-to-l from-cyan-200 to-brown-400 px-6 py-1  border-2 rounded-2xl px-1"
+                                                    placeholder="Your Contact Number *" value="" required="" />
+                                            </div><br>
+                                            <div class="form-group  ">
+                                                <input type="text" name="Email" id="email" size="20px"
+                                                    class="textbox-n form-control bg-gradient-to-l from-cyan-200 to-brown-400 px-6 py-1  border-2 rounded-2xl px-1"
+                                                    placeholder="Visting Date *" onfocus="(this.type='date')" value=""
+                                                    required="" />
+                                            </div><br>
+
+                                            <div class="form-group ">
+                                                <select
+                                                    class="form-control  bg-gradient-to-l from-cyan-200 to-brown-400 px-6 py-1 border-2 rounded-2xl px-1"
+                                                    id="service">
+                                                    <option value disable="disable">Joining For*</option>
+                                                    <option value="weigth Loss">Weigth Loss</option>
+                                                    <option value="weigth gain">Weigth Gain </option>
+                                                    <option value="endurance"> Endurance Gain</option>
+                                                    <option value="health"> Improve Your Health</option>
+                                                    <option value="body building">Body Building</option>
+                                                    <option value="strength gain">Strength Gain</option>
+                                                    <option value="Lifting">Lifting SBD</option>
+                                                    <option value="Championship">Championship</option>
+                                                    <option value="other">Other</option>
+                                                </select>
+                                            </div>
+                                            <br>
+                                            <div class="text-center bg-gray-50 "><a
+                                                    href="https://support.google.com/accounts/answer/27441?hl=en">
+                                                    Get Help In Signing </a></div>
+                                            <br>
+                                            <div class="form-group">
+                                                <input type="button" name="submit"
+                                                    class="bg-gradient-to-l from-fuchsia-600 to-cyan-400 px-6 py-1 rounded-2xl text-white font-medium btnSubmit btn-block border-black-400"
+                                                    onclick="gotowhatsapp()" value="LOGIN" />
+                                            </div><br>
+
+                                        </form>
+                                        <button
+                                            class="text-transparent  bg-clip-text bg-gradient-to-l from-fuchsia-600 to-cyan-400 font-bold ml-2 border-2 rounded-2xl px-6 border-black-400">
+                                            <a href="https://tangerine-caramel-b121d4.netlify.app/">
+                                                RESET YOUR DETAILS</a></button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/9717061693?text=Hi%20There!" class="float" style="
+position: fixed;
+width: 60px;
+height: 60px;
+bottom: 70px;
+right: 20px;
+color: #fff;
+border-radius: 40px;
+text-align: right;
+cursor: pointer;
+box-shadow: 10px 10px 30px #000000;
+">
+                        <img src="https://trickuweb.com/whatsapp.png" alt="" height="60px" width="60px" />
+                    </a>
+
+                    <script>
+                        function gotowhatsapp() {
+
+                            var name = document.getElementById("name").value;
+                            var phone = document.getElementById("phone").value;
+                            var email = document.getElementById("email").value;
+                            var service = document.getElementById("service").value;
+
+                            var url = "https://wa.me/9717061693?text="
+                                + "Name: " + name + "%0a"
+                                + "Phone: " + phone + "%0a"
+                                + "Email: " + email + "%0a"
+                                + "Joining For: " + service;
+
+                            window.open(url, '_blank').focus();
+                        }
+                    </script>
+
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                    <script>
+                        function gotowhatsapp() {
+
+                            var name = document.getElementById("name").value;
+                            var phone = document.getElementById("phone").value;
+                            var email = document.getElementById("email").value;
+                            var service = document.getElementById("service").value;
+
+                            var url = "https://wa.me/9717061693?text="
+                                + "Name: " + name + "%0a"
+                                + "Phone: " + phone + "%0a"
+                                + "Visting Date: " + email + "%0a"
+                                + "Joining For: " + service;
+
+                            window.open(url, '_blank').focus();
+                        }
+                    </script>
+                </div>
+                <hr>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/290d4f0eb4.js" crossorigin="anonymous"></script>
+
+
+    <div class="bg-black p-5 items-center">
+        <button id="click" onclick="clicked1()"
+            class="text-transparent  bg-clip-text bg-gradient-to-l from-fuchsia-600 to-cyan-400 font-bold ml-2 border-2 rounded-2xl px-6 border-cyan-400">
+            <a href="https://powerfitnessgym-gurugram-haryana.netlify.app/">RETURN HOME BUTTON</a>
+        </button>
+        <div class="flex justify-center pt-10 pb-14 md:pb-9"> <img class="w-2/5 md:w-[25%] lg:w-[18%] xl:w-[15%]"
+                src="images/cucet-footer-logo.png" alt="" srcset="" /> </div>
+        <div
+            class="space-y-9 grid grid-cols-1 md:grid-cols-2 md:pl-24 md:pr-16 lg:grid-cols-4 lg:px-7 xl:px-14 xl:ml-16">
+            <div class="text-[#6d6d6d] font-[650] text-[16px] leading-7">
+                <div class="flex justify-start md:mt-10">
+                    <h1
+                        class="text-white pb-[36px] font-sans uppercase font-normal tracking-wider underline underline-offset-[12px] decoration-red-500/90">
+                        Registered your application for better 61% discount</h1> <span
+                        class="text-white font-sans uppercase font-normal tracking-wider"></span>
+                </div>
+                <p>Registration Start Date</p>
+                <p>Registration End Date</p>
+                <p>Joining Last Date </p>
+            </div>
+            <div class="text-[#747474] text-[15px] font-[550] leading-7 tracking-wide md:">
+                <div>
+                    <pre
+                        class="text-white pb-[34px] font-sans uppercase font-normal tracking-wider underline underline-offset-[12px] decoration-red-500/90"> dates &nbsp;</pre>
+                </div>
+                <p>23 Dec 2023</p>
+                <p>30 May 2024</p>
+                <p>23 Dec 2023 to 31 May 2024</p>
+            </div>
+            <div class="md:flex flex-col justify-between">
+
+                <div
+                    class="text-[#747474] text-[15px] font-[550] leading-6 tracking-wide mt-9 md:order-5 md:pt-32 lg:pb-28">
+                    <div class="flex justify-start md:-mt-32">
+                    </div>
+
+                </div>
+            </div>
+            <div class="text-[#797878] text-[15px] font-[550] leading-6 tracking-wide md:order-4 lg:">
+                <div class="flex justify-start">
+                    <h1
+                        class="text-white pb-[38px] font-sans uppercase font-normal tracking-wider underline underline-offset-[12px] decoration-red-500/90">
+                        get in touch </h1> <span
+                        class="text-white font-sans uppercase font-normal tracking-wider"></span>
+                </div>
+                <p class="space-x-3"> <i class="fa fa-home text-[17px]"></i><strong
+                        class="text-[#8b8b8b] text-[15px] tracking-wide">OUR GYM</strong> </p>
+                <div class="leading-7">
+                    <p class="">NEAR OLIVE GREEN GARDEN ,GURUGRAM HARYANA </p>
+                </div>
+                <div class="leading-7 mt-4 text-[15px] font-[500]">
+                    <p class="space-x-3 hover:text-[#cacaca]"> <i class="fa fa-phone text-[17px]"></i> <a
+                            href="#">+91 97170 61693
+                        </a> </p>
+                    <p class="space-x-3 hover:text-[#cacaca]"> <i class="fa fa-envelope text-[16px]"></i> <a href="#">
+                            irfanpowerfitnessgym@gmail.com</a> </p>
+                </div>
+            </div>
+        </div>
+        <div class="divide-y divide-[#747474] contrast-200 mt-3 mb-3 md:-mt-4 md:-mb-2 lg:-mt-16 xl:-mt-24">
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+        </div>
+        <div class="flex justify-center mb-4 md:mb-1 text-[#afafaf] text-center text-xl space-x-3">
+            <p> <a href=""
+                    class="w-10 h-10 bg-[#474747] hover:text-blue-500 transform ease-in-out duration-500 hover:bg-white rounded-full inline-block pt-[7px]"><i
+                        class="fa fa-facebook"></i></a> </p>
+
+            <p> <a href="https://instagram.com/irfanfitnes?igshid=MzRlODBiNWFlZA=="
+                    class="w-10 h-10 bg-[#474747] hover:text-blue-500 transform ease-in-out duration-500 hover:bg-white rounded-full inline-block pt-[6px]"><i
+                        class="fa fa-instagram"></i></a> </p>
+            <p> <a href="https://youtube.com/@irfanfitness3"
+                    class="w-10 h-10 bg-[#474747] hover:text-blue-500 transform ease-in-out duration-500 hover:bg-white rounded-full inline-block pt-[6px]"><i
+                        class="fa fa-youtube"></i></a> </p>
+        </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://use.fontawesome.com/03f8a0ebd4.js"></script>
+</body>
+
+</html>
