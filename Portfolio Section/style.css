@@ -177,7 +177,7 @@ body {
 
   .rightSection img:hover {
     scale: 1.35;
-    border-style: dotted;
+    border-style: none;
     border-color: rgba(237, 237, 237, 0.463);
     margin-bottom: 30px;
   }
